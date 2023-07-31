@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .aro{
+            border:1px solid black;
+            border-radius: 10px;
+            width:300px;
+            background-color: #353535;
+            margin: auto;
+            margin-top: 100px;
+        }
+        .bro{
+            display: flex;
+        }
+        .a{
+            flex:1;
+            width:280px;
+            height:80px;
+            margin:5px;
+            border-radius:10px;
+            font-size:25px;
+            text-align:right;
+        }
+        .cro{
+            display: flex;
+            padding:10px;
+        }
+        .b{
+            flex:1;
+            margin-right:15px;
+            height:40px;
+            border-radius:10px;
+            color: aqua;
+            background-color: grey;
+            cursor:pointer;
+            font-size: 20px;
+        }
+        .c{
+            flex:1;
+            margin-right:15px;
+            border-radius:10px;
+            color: aqua;
+            background-color: grey;
+            cursor:pointer;
+            font-size: 20px;
+        }
+        .d{
+            flex:1;
+            margin-right:15px;
+            border-radius:10px;
+            color: aqua;
+            background-color: grey;
+            cursor:pointer;
+            font-size: 20px;
+        }
+        .e{
+            flex:1;
+            border-radius:10px;
+            color: aqua;
+            background-color: grey;
+            cursor:pointer;
+            font-size: 20px;
+        }
+        .dro{
+            display: flex;
+            padding:10px;
+        }
+        .f{
+            flex:1;
+            margin-right:15px;
+            height:40px;
+            border-radius:10px;
+            color:white;
+            background-color: grey;
+            cursor:pointer;
+            font-size: 20px;
+        }
+        .g{
+            flex:1;
+            margin-right:15px;
+            border-radius:10px;
+            color:white;
+            background-color: grey;
+            cursor:pointer;
+            font-size: 20px;
+        }
+        .h{
+            flex:1;
+            margin-right:15px;
+            border-radius:10px;
+            color:white;
+            background-color: grey;
+            cursor:pointer;
+            font-size: 20px;
+        }
+        .i{
+            flex:1;
+            border-radius:10px;
+            color: aqua;
+            background-color: grey;
+            cursor:pointer;
+            font-size: 20px;
+        }
+        .ero{
+            display: flex;
+            padding:10px;
+        }
+        .j{
+            flex:1;
+            margin-right:15px;
+            height:40px;
+            border-radius:10px;
+            color:white;
+            background-color: grey;
+            cursor:pointer;
+            font-size: 20px;
+        }
+        .k{
+            flex:1;
+            margin-right:15px;
+            border-radius:10px;
+            color:white;
+            background-color: grey;
+            cursor:pointer;
+            font-size: 20px;
+        }
+        .l{
+            flex:1;
+            margin-right:15px;
+            border-radius:10px;
+            color:white;
+            background-color: grey;
+            cursor:pointer;
+            font-size: 20px;
+        }
+        .m{
+            flex:1;
+            border-radius:10px;
+            color: aqua;
+            background-color: grey;
+            cursor:pointer;
+            font-size: 20px;
+        }
+        .fro{
+            display: flex;
+            padding:10px;
+        }
+        .n{
+            flex:1;
+            margin-right:15px;
+            height:40px;
+            border-radius:10px;
+            color:white;
+            background-color: grey;
+            cursor:pointer;
+            font-size: 20px;
+        }
+        .o{
+            flex:1;
+            margin-right:15px;
+            border-radius:10px;
+            color:white;
+            background-color: grey;
+            cursor:pointer;
+            font-size: 20px;
+        }
+        .p{
+            flex:1;
+            margin-right:15px;
+            border-radius:10px;
+            color:white;
+            background-color: grey;
+            cursor:pointer;
+            font-size: 20px;
+        }
+        .q{
+            flex:1;
+            border-radius:10px;
+            color: aqua;
+            background-color: grey;
+            cursor:pointer;
+            font-size: 20px;
+        }
+        .gro{
+            display: flex;
+            height:40px;
+            padding:10px;
+        }
+        .s{
+            flex:1;
+            margin-right:15px;
+            border-radius:10px;
+            color:white;
+            background-color: grey;
+            cursor:pointer;
+            font-size: 20px;
+        }
+        .t{
+            flex:1;
+            margin-right:15px;
+            border-radius:10px;
+            color:white;
+            background-color: grey;
+            cursor:pointer;
+            font-size: 20px;
+        }
+        .u{
+            flex:2.5;
+            border-radius:10px;
+            color: aqua;
+            background-color: grey;
+            cursor:pointer;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="aro">
+        <form>
+            <div class="bro">
+                <input class="a" type="text" name="screen">
+            </div>
+            <div class="cro"> 
+                <input class="b" type="button" value="AC" onclick="screen.value=''">
+                <input class="c" type="button" value="DEL" onclick="screen.value=screen.value.toString().slice(0,-1)">
+                <input class="d" type="button" value="%" onclick="screen.value=screen.value+'%'">
+                <input class="e" type="button" value="/" onclick="screen.value=screen.value+'/'">
+            </div>
+            <div class="dro">
+                <input class="f" type="button" value="7" onclick="screen.value=screen.value+'7'">
+                <input class="g" type="button" value="8" onclick="screen.value=screen.value+'8'">
+                <input class="h" type="button" value="9" onclick="screen.value=screen.value+'9'">
+                <input class="i" type="button" value="*" onclick="screen.value=screen.value+'*'">
+            </div>
+            <div class="ero">
+                <input class="j" type="button" value="4" onclick="screen.value=screen.value+'4'">
+                <input class="k" type="button" value="5" onclick="screen.value=screen.value+'5'">
+                <input class="l" type="button" value="6" onclick="screen.value=screen.value+'6'">
+                <input class="m" type="button" value="-" onclick="screen.value=screen.value+'-'">
+            </div>
+            <div class="fro">
+                <input class="n" type="button" value="1" onclick="screen.value=screen.value+'1'">
+                <input class="o" type="button" value="2" onclick="screen.value=screen.value+'2'">
+                <input class="p" type="button" value="3" onclick="screen.value=screen.value+'3'">
+                <input class="q" type="button" value="+" onclick="screen.value=screen.value+'+'">
+            </div>
+            <div class="gro">
+                <input class="s" type="button" value="0" onclick="screen.value=screen.value+'0'">
+                <input class="t" type="button" value="." onclick="screen.value=screen.value+'.'">
+                <input class="u" type="button" value="=" onclick="screen.value=eval(screen.value)">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
